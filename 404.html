@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Business card</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+  // GitHub Pages serves this file for every unknown path: /cards/<slug> on manevia.github.io, /<slug> on the custom domain.
+  // Assets are addressed from the site root, whichever it is.
+  (function () { var root = location.pathname.indexOf("/cards/") === 0 ? "/cards/" : "/";
+    document.write('<link rel="stylesheet" href="' + root + 'assets/cards.css">'); window.CARDS_ROOT = root; })();
+</script>
+</head>
+<body data-page="viewer">
+<main class="viewer">
+  <div id="app"><div class="panel"><p class="fine" style="margin:0">Loading…</p></div></div>
+  <div class="foot"><a href="https://manevia.us"><img id="flogo" alt="Manevia"></a>
+    <p>Card made with Manevia. <a id="make" href="#">Make yours, free</a></p>
+    <p>Manevia builds AI that works for your business. <a href="https://manevia.us">manevia.us</a></p></div>
+</main>
+<script>document.getElementById("flogo").src = window.CARDS_ROOT + "assets/manevia-logo.png"; document.getElementById("make").href = window.CARDS_ROOT;</script>
+<script>document.write('<script src="' + window.CARDS_ROOT + 'assets/cards.js"><\/script>');</script>
+</body>
+</html>
